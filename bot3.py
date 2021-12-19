@@ -95,7 +95,7 @@ async def on_ready():
     print('다음으로 로그인합니다: ')
     print(bot.user.name)
     print('connection was succesful')
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game("오른 떡상 "))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("오른 떡상 기원"))
 
     if not discord.is_loaded():
         discord.opus.load_opus('opus')
