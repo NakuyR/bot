@@ -335,4 +335,4 @@ async def 명령어(ctx):
 야 대기열삭제 [숫자] -> 대기열에서 입력한 숫자에 해당하는 노래를 지웁니다.""", color = 0x00ff00))
 
 
-bot.run('OTIwNjgxNTgyOTI5NTIyNzU4.Ybn5ig.9pOevCt576WTD5bJWefVF1hRBo8')
+bot.run('OTIwNjgxNTgyOTI5NTIyNzU4.Ybn5ig.FFP5vCQATm8jz4wiKvcOmETihDs')
