@@ -18,6 +18,7 @@ user=[]
 musictitle=[]
 song_queue=[]
 musicnow=[]
+bad = ['ㅅㅂ','시발','씨발','존나','빡쳐','섹스','병신','ㅄ','ㅂㅅ','버러지','십련','10년','십년','씹년','씹련','ㅈㄴ']
 
 def title(msg):
     global music
@@ -334,5 +335,12 @@ async def 명령어(ctx):
 야 대기열초기화 -> 대기열에 추가된 모든 노래를 지웁니다.
 야 대기열삭제 [숫자] -> 대기열에서 입력한 숫자에 해당하는 노래를 지웁니다.""", color = 0x00ff00))
 
+@bot.event
+async def on_message(message):
+    message_contant=message.content
+    for i in bad:
+        if i in message_contant:
+            await message.channel.send('욕 나빠욧! 안대! 멈쪄!🚨')
+            #await message.delete()    
 
 bot.run('OTIwNjgxNTgyOTI5NTIyNzU4.Ybn5ig.FFP5vCQATm8jz4wiKvcOmETihDs')
