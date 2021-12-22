@@ -335,7 +335,7 @@ async def 명령어(ctx):
 야 대기열초기화 -> 대기열에 추가된 모든 노래를 지웁니다.
 야 대기열삭제 [숫자] -> 대기열에서 입력한 숫자에 해당하는 노래를 지웁니다.""", color = 0x00ff00))
 
-
+@bot.event
 async def on_message(message):
     message_contant=message.content
     for i in bad:
